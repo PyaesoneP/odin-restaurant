@@ -2,7 +2,7 @@
   "name": "odin-restaurant",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/PyaesoneP/odin-restaurant#readme",
   "devDependencies": {
+    "eslint": "^8.34.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.27.5",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1"
   }
