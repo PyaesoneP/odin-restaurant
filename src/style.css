@@ -1,1 +1,27 @@
+body {
+  height: 100vh;
+}
 
+#nav {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+#nav > div:first-child {
+  grid-column: 1 / span 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#nav > div:nth-child(2) {
+  grid-column: 7 / span 6;
+}
+
+#nav > div:nth-child(2) > ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#nav > div:nth-child(2) > ul > li {
+  list-style: none;
+}

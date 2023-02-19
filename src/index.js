@@ -4,23 +4,32 @@ import { renderContact } from "./contact";
 import { renderMenu } from "./menu";
 
 (function initializePage() {
-  (function createButtons() {
+  (function createNav() {
     const container = document.getElementById("content");
-    const buttonsDiv = document.createElement("div");
-    const homeButton = document.createElement("button");
-    homeButton.id = "home-button";
-    homeButton.innerText = "Home";
-    const menuButton = document.createElement("button");
-    menuButton.id = "menu-button";
-    menuButton.innerText = "Menu";
-    const contactButton = document.createElement("button");
-    contactButton.id = "contact-button";
-    contactButton.innerText = "Contact";
+    const nav = document.createElement("div");
+    const logoDiv = document.createElement("div");
+    const logo = document.createElement("p");
+    const navLinkDiv = document.createElement("div");
+    const navLinks = document.createElement("ul");
+    const navLink1 = document.createElement("li");
+    const navLink2 = document.createElement("li");
+    const navLink3 = document.createElement("li");
 
-    buttonsDiv.appendChild(homeButton);
-    buttonsDiv.appendChild(menuButton);
-    buttonsDiv.appendChild(contactButton);
-    container.appendChild(buttonsDiv);
+    nav.id = "nav";
+    logo.innerText = "RESTAURANT";
+    navLink1.innerText = "Home";
+    navLink2.innerText = "Menu";
+    navLink3.innerText = "Contact";
+
+    logoDiv.appendChild(logo);
+    navLinks.appendChild(navLink1);
+    navLinks.appendChild(navLink2);
+    navLinks.appendChild(navLink3);
+    navLinkDiv.appendChild(navLinks);
+
+    nav.appendChild(logoDiv);
+    nav.appendChild(navLinkDiv);
+    container.appendChild(nav);
   })();
 
   (function renderPage() {
