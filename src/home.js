@@ -9,7 +9,7 @@ function renderHome() {
     const heroTextDiv = document.createElement("div");
 
     const heroImage = document.createElement("img");
-    heroImage.setAttribute("src", "../src/heroimg.jpg");
+    heroImage.setAttribute("src", "../assets/images/heroimg.jpg");
     heroImage.id = "hero-image";
     heroImgDiv.appendChild(heroImage);
 

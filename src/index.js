@@ -2,6 +2,7 @@ import "./style.css";
 import { renderHome } from "./home";
 import { renderContact } from "./contact";
 import { renderMenu } from "./menu";
+import { clearContent } from "./clear";
 
 (function initializePage() {
   (function createNav() {
@@ -48,16 +49,22 @@ import { renderMenu } from "./menu";
     page.render();
 
     home.addEventListener("click", () => {
+      const clearedPage = clearContent();
+      clearedPage.clear();
       page = renderHome();
       page.render();
     });
 
     menu.addEventListener("click", () => {
+      const clearedPage = clearContent();
+      clearedPage.clear();
       page = renderMenu();
       page.render();
     });
 
     contact.addEventListener("click", () => {
+      const clearedPage = clearContent();
+      clearedPage.clear();
       page = renderContact();
       page.render();
     });
