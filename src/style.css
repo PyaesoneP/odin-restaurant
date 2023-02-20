@@ -52,3 +52,17 @@ body {
   object-fit: cover;
   border-radius: 10px;
 }
+
+#popular-meals > div {
+  display: flex;
+  justify-content: space-evenly;
+}
+#popular-meals > div > div > img {
+  width: 100px;
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+  object-fit: cover;
+}
+#popular-meals > div > div > p {
+  text-align: center;
+}
