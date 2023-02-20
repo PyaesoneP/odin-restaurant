@@ -92,4 +92,10 @@ import { clearContent } from "./clear";
       menu.style.color = "hsl(0, 0%, 80%)";
     });
   })();
+
+  function createFooter() {
+    const container = document.getElementById("content");
+    const footerContainer = document.createElement("div");
+    container.appendChild(footerContainer);
+  }
 })();
