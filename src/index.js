@@ -45,28 +45,51 @@ import { clearContent } from "./clear";
     const home = document.getElementById("home");
     const menu = document.getElementById("menu");
     const contact = document.getElementById("contact");
-    let page = renderHome();
-    page.render();
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const page = renderHome();
+      page.render();
+      home.style.backgroundColor = "white";
+      home.style.color = "hsl(0, 0%, 20%)";
+    });
 
     home.addEventListener("click", () => {
       const clearedPage = clearContent();
       clearedPage.clear();
-      page = renderHome();
+      const page = renderHome();
       page.render();
+      home.style.backgroundColor = "white";
+      home.style.color = "hsl(0, 0%, 20%)";
+      menu.style.backgroundColor = "hsl(0, 0%, 20%)";
+      menu.style.color = "hsl(0, 0%, 80%)";
+      contact.style.backgroundColor = "hsl(0, 0%, 20%)";
+      contact.style.color = "hsl(0, 0%, 80%)";
     });
 
     menu.addEventListener("click", () => {
       const clearedPage = clearContent();
       clearedPage.clear();
-      page = renderMenu();
+      const page = renderMenu();
       page.render();
+      menu.style.backgroundColor = "white";
+      menu.style.color = "hsl(0, 0%, 20%)";
+      home.style.backgroundColor = "hsl(0, 0%, 20%)";
+      home.style.color = "hsl(0, 0%, 80%)";
+      contact.style.backgroundColor = "hsl(0, 0%, 20%)";
+      contact.style.color = "hsl(0, 0%, 80%)";
     });
 
     contact.addEventListener("click", () => {
       const clearedPage = clearContent();
       clearedPage.clear();
-      page = renderContact();
+      const page = renderContact();
       page.render();
+      contact.style.backgroundColor = "white";
+      contact.style.color = "hsl(0, 0%, 20%)";
+      home.style.backgroundColor = "hsl(0, 0%, 20%)";
+      home.style.color = "hsl(0, 0%, 80%)";
+      menu.style.backgroundColor = "hsl(0, 0%, 20%)";
+      menu.style.color = "hsl(0, 0%, 80%)";
     });
   })();
 })();

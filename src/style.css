@@ -27,9 +27,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
 }
 #nav > div:nth-child(2) > ul > li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   list-style: none;
+  height: 100%;
+  width: 100px;
+  border-top: 5px solid hsl(0, 0%, 20%);
+  box-sizing: border-box;
 }
 
 #hero-container {
@@ -65,4 +75,8 @@ body {
 }
 #popular-meals > div > div > p {
   text-align: center;
+}
+
+label {
+  display: block;
 }
