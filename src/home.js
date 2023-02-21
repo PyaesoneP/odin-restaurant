@@ -1,3 +1,6 @@
+import { clearContent } from "./clear";
+import { renderMenu } from "./menu";
+
 function renderHome() {
   function render() {
     makeHeroSection();
@@ -74,6 +77,55 @@ function makePopularMeals() {
   menu1Name.innerText = "Menu 1";
   menu2Name.innerText = "Menu 2";
   menu3Name.innerText = "Menu 3";
+
+  menu1Image.addEventListener("click", () => {
+    const home = document.getElementById("home");
+    const menu = document.getElementById("menu");
+    const contact = document.getElementById("contact");
+
+    const clearedPage = clearContent();
+    clearedPage.clear();
+    const page = renderMenu();
+    page.render();
+    menu.style.backgroundColor = "white";
+    menu.style.color = "hsl(0, 0%, 20%)";
+    home.style.backgroundColor = "hsl(0, 0%, 20%)";
+    home.style.color = "hsl(0, 0%, 80%)";
+    contact.style.backgroundColor = "hsl(0, 0%, 20%)";
+    contact.style.color = "hsl(0, 0%, 80%)";
+  });
+  menu2Image.addEventListener("click", () => {
+    const home = document.getElementById("home");
+    const menu = document.getElementById("menu");
+    const contact = document.getElementById("contact");
+
+    const clearedPage = clearContent();
+    clearedPage.clear();
+    const page = renderMenu();
+    page.render();
+    menu.style.backgroundColor = "white";
+    menu.style.color = "hsl(0, 0%, 20%)";
+    home.style.backgroundColor = "hsl(0, 0%, 20%)";
+    home.style.color = "hsl(0, 0%, 80%)";
+    contact.style.backgroundColor = "hsl(0, 0%, 20%)";
+    contact.style.color = "hsl(0, 0%, 80%)";
+  });
+  menu3Image.addEventListener("click", () => {
+    const home = document.getElementById("home");
+    const menu = document.getElementById("menu");
+    const contact = document.getElementById("contact");
+
+    const clearedPage = clearContent();
+    clearedPage.clear();
+    const page = renderMenu();
+    page.render();
+    menu.style.backgroundColor = "white";
+    menu.style.color = "hsl(0, 0%, 20%)";
+    home.style.backgroundColor = "hsl(0, 0%, 20%)";
+    home.style.color = "hsl(0, 0%, 80%)";
+    contact.style.backgroundColor = "hsl(0, 0%, 20%)";
+    contact.style.color = "hsl(0, 0%, 80%)";
+  });
 }
 
 export { renderHome };

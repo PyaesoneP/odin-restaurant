@@ -3,6 +3,7 @@ body {
 }
 
 #content {
+  height: 100%;
   display: grid;
   grid-template-rows: auto 1fr auto;
   gap: 20px;
@@ -73,6 +74,7 @@ body {
   aspect-ratio: 1 / 1;
   border-radius: 10px;
   object-fit: cover;
+  cursor: pointer;
 }
 #popular-meals > div > div > p {
   text-align: center;
@@ -92,4 +94,39 @@ body {
 
 label {
   display: block;
+}
+
+#footer {
+  background-color: hsl(0, 0%, 20%);
+  color: hsl(0, 0%, 80%);
+}
+#footer > div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+#footer > div ul {
+  padding: 0px;
+}
+#footer > div li {
+  list-style: none;
+  cursor: pointer;
+}
+#footer > div a {
+  color: hsl(0, 0%, 80%);
+  text-decoration: none;
+}
+#footer > div > div:nth-child(1),
+#footer > div > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  width: 30px;
+  margin-right: 30px;
+}
+#footer > p {
+  text-align: center;
+  font-weight: lighter;
 }
