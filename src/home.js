@@ -20,7 +20,7 @@ function makeHeroSection() {
   const heroTextDiv = document.createElement("div");
 
   const heroImage = document.createElement("img");
-  heroImage.setAttribute("src", "../assets/images/heroimg.jpg");
+  heroImage.setAttribute("src", "./assets/images/heroimg.jpg");
   heroImage.id = "hero-image";
   heroImgDiv.appendChild(heroImage);
 
@@ -70,9 +70,9 @@ function makePopularMeals() {
   menu2.appendChild(menu2Name);
   menu3.appendChild(menu3Name);
 
-  menu1Image.src = "../assets/images/menu1.jpg";
-  menu2Image.src = "../assets/images/menu2.jpg";
-  menu3Image.src = "../assets/images/menu3.jpg";
+  menu1Image.src = "./assets/images/menu1.jpg";
+  menu2Image.src = "./assets/images/menu2.jpg";
+  menu3Image.src = "./assets/images/menu3.jpg";
 
   menu1Name.innerText = "Menu 1";
   menu2Name.innerText = "Menu 2";

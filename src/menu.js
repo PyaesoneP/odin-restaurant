@@ -15,27 +15,27 @@ function makeMenu() {
   const menu1 = menuConstructor(
     "Menu1",
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vulputate odio ut enim blandit volutpat. Gravida dictum fusce ut placerat orci.",
-    "../assets/images/menu1.jpg"
+    "./assets/images/menu1.jpg"
   );
   const menu2 = menuConstructor(
     "Menu2",
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vulputate odio ut enim blandit volutpat. Gravida dictum fusce ut placerat orci.",
-    "../assets/images/menu2.jpg"
+    "./assets/images/menu2.jpg"
   );
   const menu3 = menuConstructor(
     "Menu3",
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vulputate odio ut enim blandit volutpat. Gravida dictum fusce ut placerat orci.",
-    "../assets/images/menu3.jpg"
+    "./assets/images/menu3.jpg"
   );
   const menu4 = menuConstructor(
     "Menu4",
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vulputate odio ut enim blandit volutpat. Gravida dictum fusce ut placerat orci.",
-    "../assets/images/menu4.jpg"
+    "./assets/images/menu4.jpg"
   );
   const menu5 = menuConstructor(
     "Menu5",
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vulputate odio ut enim blandit volutpat. Gravida dictum fusce ut placerat orci.",
-    "../assets/images/menu5.jpg"
+    "./assets/images/menu5.jpg"
   );
 
   const menu = addMenu();

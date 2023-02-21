@@ -186,11 +186,11 @@ import { clearContent } from "./clear";
     facebookIcon.href =
       "https://www.facebook.com/profile.php?id=100008049600919";
     githubIcon.innerHTML =
-      '<img src="../assets/icons/github-mark-white.png" class="icon">';
+      '<img src="./assets/icons/github-mark-white.png" class="icon">';
     linkedinIcon.innerHTML =
-      '<img src="../assets/icons/LI-In-Bug.png" class="icon">';
+      '<img src="./assets/icons/LI-In-Bug.png" class="icon">';
     facebookIcon.innerHTML =
-      '<img src="../assets/icons/f_logo_RGB-White_58.png" class="icon">';
+      '<img src="./assets/icons/f_logo_RGB-White_58.png" class="icon">';
 
     navi1Link.addEventListener("click", () => {
       const clearedPage = clearContent();
